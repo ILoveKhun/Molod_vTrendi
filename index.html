@@ -1,122 +1,127 @@
 <!doctype html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Молодь вТренді</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header_container">
-        <div class="header_items">
-          <div class="header_items--left">
-            <span class="header_items--left--logo">
-              <a href="#first_screen" class="header_items--left--link--item">⚡ Молодь вТренді</a>
-            </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Молодь вТренді</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_container">
+      <div class="header_items">
+        <div class="header_items--left">
+          <span class="header_items--left--logo">
+            <a href="#first_screen" class="header_items--left--link--item">⚡ Молодь вТренді</a>
+          </span>
+        </div>
+
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-btn">
+          <img src="./img/burger-menu.svg" alt="Меню" />
+        </label>
+
+        <nav class="header_items--right">
+          <div class="header_items--right--link">
+            <a href="#about" class="header_items--right--link--item">Про нас</a>
+            <a href="#team" class="header_items--right--link--item">Команда</a>
+            <a href="#directions" class="header_items--right--link--item">Напрями</a>
+            <a href="#history" class="header_items--right--link--item">Історія</a>
+            <a href="#contacts" class="header_items--right--link--item">Контакти</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="first_screen" class="main">
+    <section class="main_first--section">
+      <div class="main_container">
+        <div class="main_first--section--content">
+          <div class="main_first--section--badge">з 2019 року • село Медвин</div>
+
+          <h1 class="main_title--big">Молодь вТренді</h1>
+
+          <p class="main_first--section--content--text">
+            Громадська організація, що формує інфраструктуру молодіжного розвитку в сільській громаді
+          </p>
+
+          <div class="main_first--section--content--actions">
+            <a href="https://www.instagram.com/molodvtrendi/" target="_blank" class="main_first--section--btn">
+              Приєднатися до спільноти
+            </a>
+            <a href="#about" class="main_first--section--btn"> Дізнатися більше </a>
           </div>
 
-          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
-          <label for="burger-checkbox" class="burger-btn">
-            <img src="./img/burger-menu.svg" alt="Меню" />
-          </label>
-
-          <nav class="header_items--right">
-            <div class="header_items--right--link">
-              <a href="#about" class="header_items--right--link--item">Про нас</a>
-              <a href="#directions" class="header_items--right--link--item">Напрями</a>
-              <a href="#history" class="header_items--right--link--item">Історія</a>
-              <a href="#contacts" class="header_items--right--link--item">Контакти</a>
-              <a href="#team" class="header_items--right--link--item">Команда</a>
+          <div class="main_first--section--stats">
+            <div class="stats_card">
+              <span class="main_first--section--stats--number">5+</span>
+              <span class="main_first--section--stats--label">років роботи</span>
             </div>
-          </nav>
+
+            <div class="stats_card">
+              <span class="main_first--section--stats--number">150+</span>
+              <span class="main_first--section--stats--label">відвідувачів/міс</span>
+            </div>
+
+            <div class="stats_card">
+              <span class="main_first--section--stats--number">7-35</span>
+              <span class="main_first--section--stats--label">років аудиторія</span>
+            </div>
+
+            <div class="stats_card">
+              <span class="main_first--section--stats--icon">🏆</span>
+              <span class="main_first--section--stats--label">краща практика 2020</span>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main id="first_screen" class="main">
-      <section class="main_first--section">
-        <div class="main_container">
-          <div class="main_first--section--content">
-            <div class="main_first--section--badge">з 2019 року • село Медвин</div>
-
-            <h1 class="main_title--big">Молодь вТренді</h1>
-
-            <p class="main_first--section--content--text">
-              Громадська організація, що формує інфраструктуру молодіжного розвитку в сільській громаді
+    <section id="about" class="main_second--section">
+      <div class="main_container">
+        <h2 class="main_title">Хто ми?</h2>
+        <div class="main_second--section--grid">
+          <div class="main_second--section--card">
+            <h3 class="main_second--section--card--title">Наша місія</h3>
+            <p class="main_second--section--card--text">
+              ГО «Молодь вТренді» з <span class="highlight">09.10.2019 року системно здійснює молодіжну роботу</span> в
+              селі Медвин Білоцерківського району Київської області. Ми <span class="highlight">об'єднуємо молодь віком
+                14-35 років</span> і створюємо програми для самореалізації, розвитку навичок та формування активної
+              спільноти.
             </p>
-
-            <div class="main_first--section--content--actions">
-              <a href="https://www.instagram.com/molodvtrendi/" target="_blank" class="main_first--section--btn">
-                Приєднатися до спільноти
-              </a>
-              <a href="#about" class="main_first--section--btn"> Дізнатися більше </a>
-            </div>
-
-            <div class="main_first--section--stats">
-              <div class="stats_card">
-                <span class="main_first--section--stats--number">5+</span>
-                <span class="main_first--section--stats--label">років роботи</span>
-              </div>
-
-              <div class="stats_card">
-                <span class="main_first--section--stats--number">150+</span>
-                <span class="main_first--section--stats--label">відвідувачів/міс</span>
-              </div>
-
-              <div class="stats_card">
-                <span class="main_first--section--stats--number">7-35</span>
-                <span class="main_first--section--stats--label">років аудиторія</span>
-              </div>
-
-              <div class="stats_card">
-                <span class="main_first--section--stats--icon">🏆</span>
-                <span class="main_first--section--stats--label">краща практика 2020</span>
-              </div>
-            </div>
+          </div>
+          <div class="main_second--section--card">
+            <h3 class="main_second--section--card--title">Унікальність</h3>
+            <p class="main_second--section--card--text">
+              Ми стали <span class="highlight">першими в Україні, хто придбав будинок</span> спеціально для молодіжного
+              центру та власними силами створив повноцінний простір. Сьогодні це важливий хаб громади, де щомісяця понад
+              <span class="highlight">150 молодих людей</span> навчаються та генерують ідеї.
+            </p>
+          </div>
+          <div class="main_second--section--card">
+            <h3 class="main_second--section--card--title">Визнання</h3>
+            <p class="main_second--section--card--text">
+              У 2020 році наш простір отримав відзнаку <span class="highlight">«Краща практика молодіжної роботи у малій
+                громаді України»</span>. Ми пишаємося статусом членів Асоціації молодіжних центрів України.
+            </p>
+          </div>
+          <div class="main_second--section--card">
+            <h3 class="main_second--section--card--title">Партнери</h3>
+            <p class="main_second--section--card--text">
+              Ми співпрацюємо з <span class="highlight">Медвинським ліцеєм, БФ «МХП-Громаді»</span>, Київським обласним
+              молодіжним центром та управлінням молоді та спорту Київської області.
+            </p>
           </div>
         </div>
-      </section>
-
-      <section id="about" class="main_second--section">
-        <div class="main_container">
-          <h2 class="main_title">Хто ми?</h2>
-          <div class="main_second--section--grid">
-            <div class="main_second--section--card">
-              <h3 class="main_second--section--card--title">Наша місія</h3>
-              <p class="main_second--section--card--text">
-                ГО «Молодь вТренді» з <span class="highlight">09.10.2019 року системно здійснює молодіжну роботу</span> в селі Медвин Білоцерківського району Київської області. Ми <span class="highlight">об'єднуємо молодь віком 14-35 років</span> і створюємо програми для самореалізації, розвитку навичок та формування активної спільноти.
-              </p>
-            </div>
-            <div class="main_second--section--card">
-              <h3 class="main_second--section--card--title">Унікальність</h3>
-              <p class="main_second--section--card--text">
-                Ми стали <span class="highlight">першими в Україні, хто придбав будинок</span> спеціально для молодіжного центру та власними силами створив повноцінний простір. Сьогодні це важливий хаб громади, де щомісяця понад <span class="highlight">150 молодих людей</span> навчаються та генерують ідеї.
-              </p>
-            </div>
-            <div class="main_second--section--card">
-              <h3 class="main_second--section--card--title">Визнання</h3>
-              <p class="main_second--section--card--text">
-                У 2020 році наш простір отримав відзнаку <span class="highlight">«Краща практика молодіжної роботи у малій громаді України»</span>. Ми пишаємося статусом членів Асоціації молодіжних центрів України.
-              </p>
-            </div>
-            <div class="main_second--section--card">
-              <h3 class="main_second--section--card--title">Партнери</h3>
-              <p class="main_second--section--card--text">
-                Ми співпрацюємо з <span class="highlight">Медвинським ліцеєм, БФ «МХП-Громаді»</span>, Київським обласним молодіжним центром та управлінням молоді та спорту Київської області.
-              </p>
-            </div>
-          </div>
-        </div>
+      </div>
       <section id="team" class="main_team--section">
         <div class="main_container">
           <h2 class="main_title">Наша команда</h2>
-          
+
           <div class="team_leads">
             <div class="team_card lead">
               <span class="team_icon">⚡</span>
@@ -132,7 +137,8 @@
           </div>
 
           <div class="main_fifth--section--divider"></div>
-          <p class="main_sixth--section--subtitle" style="text-align: center; margin-bottom: 20px;">Члени правління ГО</p>
+          <p class="main_sixth--section--subtitle" style="text-align: center; margin-bottom: 20px;">Члени правління ГО
+          </p>
 
           <div class="team_members--grid">
             <div class="team_card">
@@ -218,7 +224,8 @@
           <h2 class="main_title">Корисні посилання</h2>
           <div class="main_fifth--section--content">
             <div class="main_fifth--section--links--grid">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoSkh58QTvQhuevVqd7MiWKoLkNWmC2g1zq4IInYTPQKmz4w/viewform" target="_blank" class="main_fifth--section--link--card">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoSkh58QTvQhuevVqd7MiWKoLkNWmC2g1zq4IInYTPQKmz4w/viewform"
+                target="_blank" class="main_fifth--section--link--card">
                 <span class="main_fifth--section--link--icon">📋</span>
                 <div class="main_fifth--section--link--info">
                   <span class="main_fifth--section--link--title">Анкета</span>
@@ -239,7 +246,8 @@
                   <span class="main_fifth--section--link--sub">Сторінка організації</span>
                 </div>
               </a>
-              <a href="https://www.facebook.com/groups/2442090229393792/" target="_blank" class="main_fifth--section--link--card">
+              <a href="https://www.facebook.com/groups/2442090229393792/" target="_blank"
+                class="main_fifth--section--link--card">
                 <span class="main_fifth--section--link--icon">👥</span>
                 <div class="main_fifth--section--link--info">
                   <span class="main_fifth--section--link--title">Facebook Група</span>
@@ -265,7 +273,8 @@
           <h2 class="main_title">Для ваших донатів</h2>
           <div class="main_sixth--section--divider"></div>
           <p class="main_sixth--section--subtitle">Ви можете підтримати наші ініціативи</p>
-          <a href="https://bank.gov.ua/qr/QkNECjAwMgoyClVDVAoKw84gzM7LzsTcIMLS0MXNxLIKVUEyNjMwNTI5OTAwMDAwMjYwMDEwMDAxMjY0ODEKVUFICjQzMjgwNzc0CgoKwevg4-7ks-nt6Okg4u3l8e7qIO3gIPHy4PLz8u3zIOSz_-v87bPx8vwgw84gq8zu6-7k_CDi0vDl7eSzuy4gweXnIM_Ewi4K" target="_blank" class="main_sixth--section--bank--card">
+          <a href="https://bank.gov.ua/qr/QkNECjAwMgoyClVDVAoKw84gzM7LzsTcIMLS0MXNxLIKVUEyNjMwNTI5OTAwMDAwMjYwMDEwMDAxMjY0ODEKVUFICjQzMjgwNzc0CgoKwevg4-7ks-nt6Okg4u3l8e7qIO3gIPHy4PLz8u3zIOSz_-v87bPx8vwgw84gq8zu6-7k_CDi0vDl7eSzuy4gweXnIM_Ewi4K"
+            target="_blank" class="main_sixth--section--bank--card">
             <div class="main_sixth--section--bank--content">
               <span class="main_sixth--section--bank--icon">💳</span>
               <div class="main_sixth--section--bank--text">
@@ -276,12 +285,13 @@
           </a>
         </div>
       </section>
-    </main>
+  </main>
 
-    <footer class="footer">
-      <div class="footer_container">
-        <p class="footer_subscription--text">© 2019–2026 ГО «Молодь вТренді» • Медвин, Україна ⚡</p>
-      </div>
-    </footer>
-  </body>
+  <footer class="footer">
+    <div class="footer_container">
+      <p class="footer_subscription--text">© 2019–2026 ГО «Молодь вТренді» • Медвин, Україна ⚡</p>
+    </div>
+  </footer>
+</body>
+
 </html>
