@@ -47,6 +47,9 @@ body {
   .main_third--section--item {
     padding: 25px 20px;
   }
+  .main_team--grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 @media (max-width: 700px) {
   .burger-btn {
@@ -561,6 +564,66 @@ h6 {
   font-weight: 800;
   font-size: 1.4rem;
   margin-bottom: 8px;
+}
+.main_team--section {
+  padding: 40px 0;
+  text-align: center;
+}
+.main_team--section .main_team--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.main_team--section .main_team--card {
+  background: #111111;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.main_team--section .main_team--card:hover {
+  border-color: gold;
+  transform: translateY(-5px);
+}
+.main_team--section .main_team--card .main_team--icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.main_team--section .main_team--card .main_team--name {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+}
+.main_team--section .main_team--card .main_team--role {
+  color: gold;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.main_team--section .main_team--board {
+  margin-top: 50px;
+  padding: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main_team--section .main_team--board--title {
+  color: gray;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main_team--section .main_team--board--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.main_team--section .main_team--board--list .board_item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .main_title {
   font-size: 2.5rem;
